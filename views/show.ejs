@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="/normalize.css"/>
+    <link rel="stylesheet" href="/skeleton.css"/>
+</head>
+    <div class="container">
+        <body>
+            <% for(let i = 0; i < allTransactions.length; i++) { %>
+                <h1><%=allTransactions[i].name%></h1>
+                <table class="u-full-width">
+                    <tbody>
+                        <tr>
+                                <td><%=allTransactions[i].date%></td>
+                                <td>
+                                    <a href=><%=allTransactions[i].name%></td></a>
+                                <td><%=allTransactions[i].amount%></td>
+                                <td><%=allTransactions[i].tags%></td>
+                            </tr>
+                        </tbody>
+                </table>
+            <!-- <button class="favorite styled"
+                    type="button">
+                    Back
+            </button> -->
+            <% } %>
+        </body>
+    </div>
+</html>
